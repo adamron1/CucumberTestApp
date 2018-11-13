@@ -1,0 +1,26 @@
+@{
+    ViewData["Title"] = "Account Page";
+}
+
+<h3>
+    Account Name: @ViewData["name"]
+</h3>
+<h4 style="color:red;">
+    Balance: @ViewData["balance"]
+</h4>
+
+<br>
+<br>
+
+<p>Please Type in your name and account balance below</p>
+
+<form action="/Home/Account?.php" method="GET">
+  Name:<br>
+  <input type="text" name="name" value="Adam F Ron">
+  <br>
+  Account Balance:<br>
+  <input type="text" name="balance" value="-123456789">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
